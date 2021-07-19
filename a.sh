@@ -27,7 +27,7 @@ function uninstall {
         rm ~/.zprofile
     fi
     if [ -f ~/.zprofile_org ]; then
-        mv ~/.zprofile_org ~/.zprofile
+        cp ~/.zprofile_org ~/.zprofile
     fi
     clear
     killall zsh

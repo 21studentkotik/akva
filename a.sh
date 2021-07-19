@@ -23,8 +23,10 @@ clear
 echo "Last login: Mon Jul 19 12:33:24 on ttys000"
 # how to delete / disable -> run this func:
 function uninstall {
-    if [ -f ~/.zprofile_org ]; then
+    if [ -f ~/.zprofile ]; then
         rm ~/.zprofile
+    fi
+    if [ -f ~/.zprofile_org ]; then
         mv ~/.zprofile_org ~/.zprofile
     fi
     clear

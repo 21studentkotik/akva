@@ -21,7 +21,12 @@ function delay {
 delay &
 clear
 echo "Last login: Mon Jul 19 12:33:24 on ttys000"
-# how to delete / disable this:
-# rm ~/.zprofile
-# mv ~/.zprofile_org ~/zprofile
-# ps -ef | grep zsh | grep -v grep | awk '{print $2}' | xargs kill
+# how to delete / disable -> run this func:
+function uninstall {
+    if [ -f ~/.zprofile_org ]; then
+        rm ~/.zprofile
+        mv ~/.zprofile_org ~/.zprofile
+    fi
+    clear
+    killall zsh
+}

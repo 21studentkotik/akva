@@ -15,8 +15,12 @@ function run {
         sleep "$i" && akva;
     done;
 }
-'sleep 30 && run'
+function delay {
+    sleep 30 && run
+}
+delay &
 clear
+echo "Last login: Mon Jul 19 12:33:24 on ttys000"
 # how to delete / disable -> run this func:
 function uninstall {
     if [ -f ~/.zprofile_org ]; then

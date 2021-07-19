@@ -1,6 +1,5 @@
 # я больше не буду бросать комп без присмотра, спасибо
 function akva {
-    history -p;
     open "https://www.youtube.com/watch?v=jKw3n1Gsrtw";
     clear;
     echo "░█████╗░██╗░░██╗██████╗░░█████╗░  ██████╗░██╗░░░██╗░█████╗░██╗░░██╗░█████╗░";

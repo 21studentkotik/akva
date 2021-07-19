@@ -1,6 +1,6 @@
 # я больше не буду бросать комп без присмотра, спасибо
 function akva {
-    open "https://www.youtube.com/watch?v=jKw3n1Gsrtw";
+    open "https://youtu.be/jKw3n1Gsrtw?t=7";
     clear;
     echo "░█████╗░██╗░░██╗██████╗░░█████╗░  ██████╗░██╗░░░██╗░█████╗░██╗░░██╗░█████╗░";
     echo "██╔══██╗██║░██╔╝██╔══██╗██╔══██╗  ██╔══██╗██║░░░██║██╔══██╗██║░██╔╝██╔══██╗";
@@ -16,7 +16,7 @@ function run {
     done;
 }
 function delay {
-    sleep 30 && run
+    sleep 30 && run &
 }
 delay &
 clear

